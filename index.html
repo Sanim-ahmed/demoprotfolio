@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Senior Full-Stack Engineer & Portfolio</title>
+    <meta name="description" content="Portfolio of Alex Morgan, Senior Full-Stack Software Engineer specializing in building exceptional responsive web applications and scalable systems.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">AM<span class="dot">.</span></a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge">Full-Stack Software Engineer</span>
+                    <h1 class="hero-title">Building scalable, responsive web experiences.</h1>
+                    <p class="hero-subtitle">Hi, I'm Alex Morgan. I craft high-performance applications with modern architecture, fluid responsive design, and intuitive user experiences.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                            <span class="code-title">developer.ts</span>
+                        </div>
+                        <pre class="code-body"><code><span class="keyword">interface</span> <span class="type">Developer</span> {
+  <span class="property">name</span>: <span class="type">string</span>;
+  <span class="property">stack</span>: <span class="type">string</span>[];
+  <span class="property">focus</span>(): <span class="type">void</span>;
+}
+
+<span class="keyword">const</span> <span class="def">alex</span>: <span class="type">Developer</span> = {
+  <span class="property">name</span>: <span class="string">"Alex Morgan"</span>,
+  <span class="property">stack</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>, <span class="string">"Python"</span>],
+  <span class="property">focus</span>() {
+    <span class="keyword">return</span> <span class="string">"Responsive & Performant UI/UX"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about clean code, architecture, and user-centric design.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>With over 6 years of professional experience in software engineering, I specialize in designing and building robust web applications from the database to the browser. I bridge the gap between complex backend systems and pixel-perfect, responsive user interfaces.</p>
+                        <p>My approach is rooted in rigorous testing, performance optimization, accessibility standards, and modular architecture. Whether collaborating with cross-functional teams or architecting standalone products, I prioritize maintainability and user delight.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Responsive Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <h3>⚡ Performance First</h3>
+                            <p>Optimizing bundle sizes, rendering cycles, and asset delivery for lightning-fast loads across all viewports.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>📱 Mobile & Fluid Design</h3>
+                            <p>Designing mobile-first architectures with CSS Grid, Flexbox, and fluid typography that adapt flawlessly to any screen size.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>♿ Accessibility & UX</h3>
+                            <p>Ensuring WCAG compliance, keyboard navigation, screen reader support, and intuitive user flows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Tools and technologies I use to bring ideas to life.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-dot"></span>React / Next.js</li>
+                            <li><span class="skill-dot"></span>TypeScript / JavaScript</li>
+                            <li><span class="skill-dot"></span>HTML5 & CSS3 / SASS</li>
+                            <li><span class="skill-dot"></span>Tailwind CSS & CSS Grid</li>
+                            <li><span class="skill-dot"></span>Responsive & Mobile-First UI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-dot"></span>Node.js & Express</li>
+                            <li><span class="skill-dot"></span>Python & FastAPI / Django</li>
+                            <li><span class="skill-dot"></span>RESTful APIs & GraphQL</li>
+                            <li><span class="skill-dot"></span>Microservices Architecture</li>
+                            <li><span class="skill-dot"></span>Authentication & Security</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & DevOps</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-dot"></span>PostgreSQL & MongoDB</li>
+                            <li><span class="skill-dot"></span>Redis Caching</li>
+                            <li><span class="skill-dot"></span>Docker & Kubernetes</li>
+                            <li><span class="skill-dot"></span>CI/CD Pipelines (GitHub Actions)</li>
+                            <li><span class="skill-dot"></span>AWS Cloud Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Explore my recent work showcasing responsive design and robust engineering.</p>
+                </div>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend / UI</button>
+                    <button class="filter-btn" data-filter="mobile">Responsive Web</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="fullstack responsive">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-1">
+                                <span class="project-icon">🛒</span>
+                                <span class="project-badge">E-Commerce</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <h3 class="project-title">PulseShop E-Commerce Platform</h3>
+                            <p class="project-description">A high-performance online shopping platform featuring real-time inventory, secure Stripe checkout, and a fully responsive mobile-first shopping experience across all devices.</p>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link" aria-label="View live demo of PulseShop">Live Demo ↗</a>
+                                <a href="#contact" class="project-link" aria-label="View source code of PulseShop">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="frontend responsive">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-2">
+                                <span class="project-icon">📊</span>
+                                <span class="project-badge">Analytics</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                            <h3 class="project-title">MetricStream Analytics Dashboard</h3>
+                            <p class="project-description">An interactive data visualization dashboard with customizable widgets, dark/light mode, and fluid responsive layouts optimized for desktops, tablets, and mobile screens.</p>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link" aria-label="View live demo of MetricStream">Live Demo ↗</a>
+                                <a href="#contact" class="project-link" aria-label="View source code of MetricStream">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="fullstack mobile">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-3">
+                                <span class="project-icon">💬</span>
+                                <span class="project-badge">SaaS</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">WebSockets</span>
+                            </div>
+                            <h3 class="project-title">Synapse AI Workspace</h3>
+                            <p class="project-description">Collaborative workspace tool integrating real-time messaging, AI-assisted content drafting, and an adaptive layout tested rigorously across 9+ viewport sizes.</p>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link" aria-label="View live demo of Synapse AI">Live Demo ↗</a>
+                                <a href="#contact" class="project-link" aria-label="View source code of Synapse AI">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="frontend responsive">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-4">
+                                <span class="project-icon">🚀</span>
+                                <span class="project-badge">Portfolio</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">DevPulse Developer Hub</h3>
+                            <p class="project-description">A community resource hub for developers featuring article publishing, bookmarking, and lightning-fast page transitions with zero horizontal overflow.</p>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link" aria-label="View live demo of DevPulse">Live Demo ↗</a>
+                                <a href="#contact" class="project-link" aria-label="View source code of DevPulse">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">My professional journey in software engineering.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 — Present</span>
+                            <h3 class="timeline-title">Senior Full-Stack Engineer</h3>
+                            <h4 class="timeline-company">Nexus Cloud Technologies</h4>
+                            <p>Leading frontend architecture and responsive design systems across core SaaS products. Reduced bundle size by 38% and standardized mobile-first component libraries used by 25+ engineers.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020 — 2022</span>
+                            <h3 class="timeline-title">Full-Stack Web Developer</h3>
+                            <h4 class="timeline-company">Vanguard Digital Studio</h4>
+                            <p>Developed custom e-commerce solutions and interactive web dashboards for enterprise clients. Ensured 100% WCAG accessibility and rigorous responsive testing across mobile, tablet, and desktop viewports.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018 — 2020</span>
+                            <h3 class="timeline-title">Frontend Developer</h3>
+                            <h4 class="timeline-company">AlphaByte Interactive</h4>
+                            <p>Built responsive marketing sites and web applications using modern JavaScript, CSS Grid, and RESTful APIs. Collaborated with UI/UX designers to translate complex wireframes into polished code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle">Have a project in mind or want to discuss opportunities? Get in touch.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>I'm currently available for freelance projects, consulting, and full-time senior engineering roles.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <span class="detail-label">Email</span>
+                                    <a href="mailto:alex.morgan@example.com" class="detail-value">alex.morgan@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">San Francisco, CA (Remote Available)</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">💼</span>
+                                <div>
+                                    <span class="detail-label">Availability</span>
+                                    <span class="detail-value">Open for Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub Profile" class="social-link">GitHub</a>
+                            <a href="#" aria-label="LinkedIn Profile" class="social-link">LinkedIn</a>
+                            <a href="#" aria-label="Twitter Profile" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                                <span class="error-message" id="name-error">Please enter your name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Tell me about your project..." required></textarea>
+                                <span class="error-message" id="message-error">Please enter your message.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            <div id="form-success" class="form-success-message">Thank you! Your message has been sent successfully.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+            <p class="footer-note">Designed & Built with rigorous responsive standards (320px – 1440px+).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
